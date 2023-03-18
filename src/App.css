@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  height: 100vh;
+  width: 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table tr td {
+  font-family: 'Belleza', sans-serif;
+  color: #121212;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title_name {
+  font-size: 28px;
+  letter-spacing: 11px;
+  font-weight: 500;
+  color: #121212;
+  cursor: pointer;
+}
+
+.services {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  letter-spacing: 3.7px;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.info_div {
+  padding-top: 5px;
+  letter-spacing: 1.8px;
+  color: #000000;
+  font-size: 11px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contacts {
+  margin-top: 13px;
+}
+
+.service_name {
+  letter-spacing: 3.7px;
+  font-size: 16px;
+  color: #121212;
+  padding-inline: 4px;
+}
+
+.bar {
+  font-size: 14px;
+}
+
+.info_flexing{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  table {
+    width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title_name {
+    font-size: 24.5px;
+    letter-spacing: 10px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  table {
+    width: 97%;
+  }
+
+  .title_name {
+    font-size: 21.8px;
+    letter-spacing: 8px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  table {
+    width: 100%;
+  }
+
+  .title_name {
+    font-size: 16px;
+    letter-spacing: 7px;
+  }
+
+  .service_name {
+    font-size: 13px;
+  }
+
+  .bar {
+    font-size: 11px;
+  }
+
+  .info_div {
+    font-size: 10px;
+  }
+  .info_flexing{
+    display: block;
   }
 }
