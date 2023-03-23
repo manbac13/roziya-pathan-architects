@@ -8,10 +8,10 @@ import { useState } from 'react';
 
 function App() {
 
-  const [background, setBackground] = useState("#fff");
-  const [color, setColor] = useState("#121212");
-  const [iconBack, setIconBack] = useState("#121212");
-  const [iconColor, setIconColor] = useState("#fff")
+  const [background, setBackground] = useState("#121212");
+  const [color, setColor] = useState("#fff");
+  const [iconBack, setIconBack] = useState("#fff");
+  const [iconColor, setIconColor] = useState("#121212")
 
   const sendEmail = () => {
     window.location = "mailto:rpa.workspace@gmail.com"
